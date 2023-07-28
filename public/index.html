@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>chat app</title>
 </head>
 <body>
-    <h1>Welcome to chat App</h1>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://th.bing.com/th/id/R.7c36a2be0d9c1d40ecdbbe01a60c1d58?rik=HUDAlf0YkIRAlg&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fecM%2fppX%2fecMppXnMi.jpeg&ehk=WMXekbfk%2bcMT5CNutreqqiz0iGLgvu4Q8ZSfDNv2Kdk%3d&risl=&pid=ImgRaw&r=0" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Welcome to chat App
+          </a>
+        </div>
+      </nav>
 
-    <input type="text" id="newmsg">
-    <button id="btn">Send</button>
-
-    <ul id="msgList" ></ul>
-
+      <h1></h1>
+     <div class="container">
+        <div class="mb-3">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="write message">
+          </div>
+        <button id="btn"  class="btn btn-primary mb-3">Send</button>
+        <ul id="msgList" ></ul>    
+     </div>
+     
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
 

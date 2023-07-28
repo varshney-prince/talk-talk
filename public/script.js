@@ -3,7 +3,7 @@
 var socket = io();
 
 let btn = document.getElementById('btn');
-let inputMsg = document.getElementById('newmsg');
+let inputMsg = document.getElementById('exampleFormControlInput1');
 let msgList = document.getElementById('msgList');
 
 
